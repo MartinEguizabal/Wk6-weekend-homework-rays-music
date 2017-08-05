@@ -3,12 +3,10 @@ package wizard_management;
 public class Piano extends Instrument {
 
   int keys;
-  String colour;
 
   public Piano(String material, int keys, String colour) {
-    super(material);
+    super(material, colour);
     this.keys = keys;
-    this.colour = colour;
   }
 
   public String play(){

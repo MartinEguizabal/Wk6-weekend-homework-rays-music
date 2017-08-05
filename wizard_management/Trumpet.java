@@ -3,12 +3,10 @@ package wizard_management;
 public class Trumpet extends Instrument {
 
   int valves;
-  String colour;
 
   public Trumpet(String material, int valves, String colour){
-    super(material);
+    super(material, colour);
     this.valves = valves;
-    this.colour = colour;
   }
 
   public String play(){
