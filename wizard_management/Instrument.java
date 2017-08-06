@@ -5,10 +5,10 @@ public abstract class Instrument implements Playable, Sellable {
 
   String material;
   String colour;
-  double sale_price;
-  double buy_price;
+  int sale_price;
+  int buy_price;
 
-  public Instrument(String material, String colour, double sale_price, double buy_price) {
+  public Instrument(String material, String colour, int sale_price, int buy_price) {
     this.material = material;
     this.colour = colour;
     this.sale_price = sale_price;

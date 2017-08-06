@@ -2,12 +2,19 @@ package wizard_management;
 
 public class SheetMusic extends Accessories {
 
-  public SheetMusic(double sale_price, double buy_price) {
+  public SheetMusic(int sale_price, int buy_price) {
     super(sale_price, buy_price);
   }
 
-  public double calculateMarkup(double sale_price, double buy_price){
-    double result = ((sale_price - buy_price)/buy_price) *100;
-    return Math.round(result);
+  public int calculateMarkup(int sale_price, int buy_price){
+    return sale_price - buy_price;
+  }
+
+  public int getSalePrice(){
+    return this.sale_price;
+  }
+
+  public int getBuyPrice(){
+    return this.buy_price;
   }
 }

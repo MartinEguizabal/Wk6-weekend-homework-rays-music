@@ -13,7 +13,7 @@ public class StringsTest{
 
   @Test
   public void hasCalculateMarkup(){
-    assertEquals(25, strings.calculateMarkup(10, 8), 0.01);
+    assertEquals(2, strings.calculateMarkup(10, 8));
   }
 }
 

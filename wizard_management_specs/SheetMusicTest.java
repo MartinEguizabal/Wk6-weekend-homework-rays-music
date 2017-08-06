@@ -13,6 +13,6 @@ public class SheetMusicTest{
 
   @Test
   public void hasCalculateMarkup(){
-    assertEquals(67, sheet_music.calculateMarkup(20, 12), 0.01);
+    assertEquals(8, sheet_music.calculateMarkup(20, 12));
   }
 }

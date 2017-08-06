@@ -18,7 +18,17 @@ public class GuitarTest {
 
   @Test
   public void hasCalculateMarkup(){
-    assertEquals(50, guitar.calculateMarkup(150, 100), 0.01);
+    assertEquals(50, guitar.calculateMarkup(150, 100));
+  }
+
+  @Test
+  public void hasSalePrice(){
+    assertEquals(150, guitar.getSalePrice());
+  }
+
+  @Test
+  public void hasBuyPrice(){
+    assertEquals(100, guitar.getBuyPrice());
   }
 
   @Test
