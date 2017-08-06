@@ -10,7 +10,8 @@ public class Piano extends Instrument {
   }
 
   public double calculateMarkup(double sale_price, double buy_price){
-    return ((sale_price - buy_price)/buy_price) *100;
+    double result = ((sale_price - buy_price)/buy_price) *100;
+    return Math.round(result);
   }
 
   public String play(){

@@ -8,7 +8,7 @@ public class TrumpetTest {
 
   @Before
   public void before(){
-    trumpet = new Trumpet("brass", 6, "gold", 1000, 600);
+    trumpet = new Trumpet("brass", 6, "gold", 800, 600);
   }
 
   @Test
@@ -18,7 +18,7 @@ public class TrumpetTest {
 
   @Test
   public void hasCalculateMarkup(){
-    assertEquals(100, trumpet.calculateMarkup(1000, 500), 0.01);
+    assertEquals(33, trumpet.calculateMarkup(800, 600), 0.01);
   }
 
   @Test

@@ -13,7 +13,7 @@ public class PianoTest {
 
   @Test
   public void hasCalculateMarkup(){
-    assertEquals(25, piano.calculateMarkup(5000, 4000), 0.01);
+    assertEquals(67, piano.calculateMarkup(5000, 3000), 0.01);
   }
 
   @Test
