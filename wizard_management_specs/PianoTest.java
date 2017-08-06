@@ -8,7 +8,12 @@ public class PianoTest {
 
   @Before 
   public void before(){
-    piano = new Piano("imitation ivory", 255, "black");
+    piano = new Piano("imitation ivory", 255, "black", 5000, 3000);
+  }
+
+  @Test
+  public void hasCalculateMarkup(){
+    assertEquals(25, piano.calculateMarkup(5000, 4000), 0.01);
   }
 
   @Test
