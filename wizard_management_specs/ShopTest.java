@@ -13,8 +13,8 @@ public class ShopTest {
   @Before
   public void before(){
     shop = new Shop();
-    guitar = new Guitar("aluminum", 4, "silver", 150, 100);
-    piano = new Piano("wood", 275, "black", 7000, 5000);
+    guitar = new Guitar(MaterialType.ALUMINUM, 4, "silver", 150, 100);
+    piano = new Piano(MaterialType.WOOD, 275, "black", 7000, 5000);
   }
 
   @Test

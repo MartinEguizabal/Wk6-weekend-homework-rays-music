@@ -8,7 +8,7 @@ public class PianoTest {
 
   @Before 
   public void before(){
-    piano = new Piano("imitation ivory", 255, "black", 5000, 3000);
+    piano = new Piano(MaterialType.IVORY, 255, "black", 5000, 3000);
   }
 
   @Test
@@ -28,7 +28,7 @@ public class PianoTest {
 
   @Test
   public void hasMaterial(){
-    assertEquals("imitation ivory", piano.getMaterial());
+    assertEquals(MaterialType.IVORY, piano.getMaterial());
   }
 
 }
